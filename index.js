@@ -34,7 +34,7 @@ function paginaInicial(requisicao, resposta) {
         `);
 }
 
-app.get("/numero", paginaInicial);
+app.get("/", paginaInicial);
 
 app.listen(porta, host, () => {
     console.log("Servidor em execução http://" + host + ":" + porta);
