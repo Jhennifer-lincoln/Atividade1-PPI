@@ -6,7 +6,7 @@ const porta = 3000;
 const app = express();
 
 function paginaInicial(requisicao, resposta) {
-    resposta.send(`<h1>Seja bem-vindo!</h1>`)
+    resposta.send(`<h1>Seja bem-vindo!</h1>`);
 }
 
 app.get("/", paginaInicial);
