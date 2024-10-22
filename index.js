@@ -7,13 +7,13 @@ const app = express();
 
 function paginaInicial(requisicao, resposta) {
     const tabuada = parseInt(requisicao.query.tabuada) || 1;
-    const sequencia = parseInt(requisicao.query.sequencia) || 10;
+    const fim = parseInt(requisicao.query.fim) || 10;
 
     let resultado = `<h1>Tabuada do ${tabuada}</h1>`;
 
     resultado += `<ul>`;
 
-    for (let i = 0; i <= sequencia; i++) {
+    for (let i = 0; i <= fim; i++) {
         resultado += `<li>${tabuada} x ${i} = ${tabuada * i}</li>`;
     }
 
